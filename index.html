@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformers.js - Object Detection demo</title>
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="app-title">🔍 Object Detection</h1>
+        <p id="status">Loading model...</p>
+
+        <!-- Upload Zone -->
+        <div id="upload-zone">
+            <input type="file" id="file-input" accept="image/*" hidden />
+            <div id="drop-area">
+                <span class="upload-icon">📁</span>
+                <p class="upload-text">Drag & drop an image here</p>
+                <p class="upload-sub">or</p>
+                <button id="upload-btn" disabled>Upload Image</button>
+            </div>
+        </div>
+
+        <!-- Image + Bounding Boxes -->
+        <div id="image-container">
+            <img id="image" src="road.jpeg" />
+        </div>
+
+        <!-- Detect button -->
+        <button id="detect-objects" disabled>Detect Objects</button>
+    </main>
+</body>
+
+</html>
